@@ -1,3 +1,17 @@
 <div class="container">
     <h1>Listado de Proveedores</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>CIF</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let proveedor of proveedores">
+            <td>{{proveedor.nombre}}</td>
+            <td>{{proveedor.cif}}</td>
+            <td>
+                <button routerLink="/visualizar-proveedor">Visualizar</button>
+            </td>
+        </tr>
+    </table>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProveedoresService } from 'src/app/servicios/proveedores.service';
 
 @Component({
   selector: 'app-listado-proveedores',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoProveedoresComponent implements OnInit {
 
-  constructor() { }
+    proveedores: any;
 
-  ngOnInit() {
-  }
+    constructor(private proveedoresService: ProveedoresService) { }
+
+    ngOnInit() {
+        this.proveedores = this.proveedoresService.getProveedores();
+    }
 
 }

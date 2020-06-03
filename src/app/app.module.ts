@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ListadoProveedoresComponent } from './proveedores/listado-proveedores/listado-proveedores.component';
 import { NavComponent } from './nav/nav.component';
+import { VisualizarProveedorComponent } from './proveedores/visualizar-proveedor/visualizar-proveedor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     ListadoProveedoresComponent,
-    NavComponent
+    NavComponent,
+    VisualizarProveedorComponent
   ],
   imports: [
     BrowserModule,

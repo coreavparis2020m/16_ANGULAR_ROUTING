@@ -22,6 +22,21 @@ p {
     font-size: 1.5rem;
 }
 
+button {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border: 1px solid #008489;
+    background-color: #008489;
+    color: white;
+    cursor: pointer;
+    transition: 400ms all ease-in-out;
+
+    &:hover {
+        border: 1px solid #004e51;
+        background-color: #004e51;
+    }
+}
+
 // Barra navegación
 
 nav {
@@ -42,3 +57,28 @@ nav {
     padding: 2rem;
     max-width: 920px;
 }
+
+// Tabla
+
+table {
+    width: 100%;
+
+    th {
+        padding: 0.5rem 1rem;
+        background-color: #e8e8e8;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    td {
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        border-bottom: 0.5px solid #e8e8e8;
+
+        &:nth-child(3) {
+            text-align: center;
+        }
+    }
+}
+
+
