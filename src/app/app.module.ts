@@ -7,6 +7,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ListadoProveedoresComponent } from './proveedores/listado-proveedores/listado-proveedores.component';
 import { NavComponent } from './nav/nav.component';
 import { VisualizarProveedorComponent } from './proveedores/visualizar-proveedor/visualizar-proveedor.component';
+import { LoadFadeDirective } from './directivas/load-fade.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VisualizarProveedorComponent } from './proveedores/visualizar-proveedor
     InicioComponent,
     ListadoProveedoresComponent,
     NavComponent,
-    VisualizarProveedorComponent
+    VisualizarProveedorComponent,
+    LoadFadeDirective
   ],
   imports: [
     BrowserModule,
