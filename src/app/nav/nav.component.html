@@ -1,4 +1,4 @@
 <nav>
     <p routerLink="/">Inicio</p>
-    <p routerLink="/proveedores">Proveedores</p>
+    <p *ngIf="rol === 'financial'" routerLink="/proveedores">Proveedores</p>
 </nav>

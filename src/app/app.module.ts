@@ -8,6 +8,8 @@ import { ListadoProveedoresComponent } from './proveedores/listado-proveedores/l
 import { NavComponent } from './nav/nav.component';
 import { VisualizarProveedorComponent } from './proveedores/visualizar-proveedor/visualizar-proveedor.component';
 import { LoadFadeDirective } from './directivas/load-fade.directive';
+import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
+import { SinPermisosComponent } from './sin-permisos/sin-permisos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LoadFadeDirective } from './directivas/load-fade.directive';
     ListadoProveedoresComponent,
     NavComponent,
     VisualizarProveedorComponent,
-    LoadFadeDirective
+    LoadFadeDirective,
+    NoEncontradoComponent,
+    SinPermisosComponent
   ],
   imports: [
     BrowserModule,

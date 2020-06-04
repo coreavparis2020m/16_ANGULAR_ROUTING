@@ -10,6 +10,7 @@ import { ProveedoresService } from 'src/app/servicios/proveedores.service';
 export class VisualizarProveedorComponent implements OnInit {
 
     id: string;
+    titulo: string;
     proveedor: any;
 
     constructor(private route: ActivatedRoute,
@@ -17,6 +18,7 @@ export class VisualizarProveedorComponent implements OnInit {
 
     ngOnInit() {
         this.id = this.route.snapshot.params['id'];
+        this.titulo = this.route.snapshot.data.titulo;
         this.proveedor = this.proveedoresService.getProveedor(this.id);
     }
 

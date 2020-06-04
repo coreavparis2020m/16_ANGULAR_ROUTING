@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'routing';
+    
+    user = {nombre: 'Pedro', rol: 'marketing'} // simultanear con el rol 'financial' para comprobar
+
+    ngOnInit() {
+        localStorage.setItem('user', JSON.stringify(this.user));
+    }
+
 }
