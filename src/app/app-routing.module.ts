@@ -8,7 +8,7 @@ import { VisualizarProveedorComponent } from './proveedores/visualizar-proveedor
 const routes: Routes = [
     {path: '', component: InicioComponent},
     {path: 'proveedores', component: ListadoProveedoresComponent},
-    {path: 'visualizar-proveedor', component: VisualizarProveedorComponent}
+    {path: 'visualizar-proveedor/:id', component: VisualizarProveedorComponent}
 ];
 
 @NgModule({

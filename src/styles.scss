@@ -56,6 +56,21 @@ nav {
     margin: 0 auto;
     padding: 2rem;
     max-width: 920px;
+
+    &.fade {
+        opacity: 0;
+        transition: 500ms opacity ease-in-out;
+    }
+
+    &.fade.show {
+        opacity: 1;
+    }
+
+    .container-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 // Tabla

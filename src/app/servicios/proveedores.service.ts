@@ -18,4 +18,11 @@ export class ProveedoresService {
         return this.proveedores;
     }
 
+    getProveedor(id) {
+        let proveedor = this.proveedores.find(elem => {
+            return elem.id === id;
+        });
+        return proveedor;
+    }
+
 }

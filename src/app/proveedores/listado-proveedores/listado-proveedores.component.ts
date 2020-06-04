@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ProveedoresService } from 'src/app/servicios/proveedores.service';
 
 @Component({
@@ -9,11 +9,15 @@ import { ProveedoresService } from 'src/app/servicios/proveedores.service';
 export class ListadoProveedoresComponent implements OnInit {
 
     proveedores: any;
+    @ViewChild('container', {static: true}) containerRef: ElementRef; // El elemento del DOM en esa propiedad
 
     constructor(private proveedoresService: ProveedoresService) { }
 
     ngOnInit() {
         this.proveedores = this.proveedoresService.getProveedores();
+        setTimeout(() => {
+            this.containerRef.nativeElement.classList.add('show');
+        }, 10)
     }
 
 }

@@ -1,5 +1,7 @@
-<div class="container">
-    <h1>Listado de Proveedores</h1>
+<div #container class="container fade">
+    <div class="container-head">
+        <h1>Listado de Proveedores</h1>
+    </div>
     <table>
         <tr>
             <th>Nombre</th>
@@ -10,7 +12,7 @@
             <td>{{proveedor.nombre}}</td>
             <td>{{proveedor.cif}}</td>
             <td>
-                <button routerLink="/visualizar-proveedor">Visualizar</button>
+                <button routerLink="/visualizar-proveedor/{{proveedor.id}}">Visualizar</button>
             </td>
         </tr>
     </table>

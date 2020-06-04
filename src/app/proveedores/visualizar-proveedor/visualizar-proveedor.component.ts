@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProveedoresService } from 'src/app/servicios/proveedores.service';
 
 @Component({
   selector: 'app-visualizar-proveedor',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisualizarProveedorComponent implements OnInit {
 
-  constructor() { }
+    id: string;
+    proveedor: any;
 
-  ngOnInit() {
-  }
+    constructor(private route: ActivatedRoute,
+                private proveedoresService: ProveedoresService) { }
+
+    ngOnInit() {
+        this.id = this.route.snapshot.params['id'];
+        this.proveedor = this.proveedoresService.getProveedor(this.id);
+    }
 
 }
